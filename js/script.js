@@ -53,6 +53,9 @@ createApp({
             } else {
                 this.selectedIndex--;
             }
+        },
+        selectOnClick(index){
+            this.selectedIndex = index;
         }
     }
 }).mount('#app')
