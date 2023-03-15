@@ -56,6 +56,15 @@ createApp({
         },
         selectOnClick(index){
             this.selectedIndex = index;
+        },
+        forwardLoop(){
+            setInterval(() =>{
+                this.nextSlide();
+            }, 3000);
         }
+    },
+    mounted() {
+        this.forwardLoop();
     }
 }).mount('#app')
+
